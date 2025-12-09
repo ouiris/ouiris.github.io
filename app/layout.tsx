@@ -16,7 +16,7 @@ function Header() {
         <ul>
             <li><a href="/#services">Services</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
         </nav>    
         </header>
@@ -29,7 +29,7 @@ import 'react-social-icons/facebook'
 
 function Footer() {
     return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
         
         <section className="links">
             <h2 className="strong">Get Connected</h2>

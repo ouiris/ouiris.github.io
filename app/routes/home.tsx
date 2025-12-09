@@ -12,7 +12,7 @@ export default function Home() {
             <article className="hero">
             <section>
             <h2 className="ital"><span className="em">OUIRISE.</span>Collective of creatives, developers, entreprenuers</h2>
-            <h3 className="strong">Crafted with precision <span className="em">& INITIATIVE</span></h3>
+            <h3 className="strong">bold with precision <span className="em">& INITIATIVE</span></h3>
             <a className="btn" href="#services">Our Services</a>
 
             </section>

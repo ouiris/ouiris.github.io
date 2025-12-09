@@ -32,7 +32,9 @@
   --text-muted: #d4d4d4;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-body);
@@ -129,7 +131,7 @@ footer {
   margin-bottom: 2rem;
   justify-content: space-around;
   border-top: var(--wood-red) solid 0.5rem;
-  align-items: center;
+  align-items: flex-start;
   background: var(--bg-dark);
   height: fit-content;
   box-sizing: border-box;
@@ -139,12 +141,27 @@ footer .links {
   display: flex; flex-direction: column;
   height: calc(var(--height) - 4vh);
   justify-content: space-between;
+  align-items: center;
 }
-footer .links h2 {
-  margin-left: 16px;
+.links a:hover {
+  color: var(--accent-primary);
+}
+.links a:active {
+  color: var(--accent-hover);
+}
+footer h2 {
+  text-align: center;
 }
 footer a {
   display: block;
+}
+
+.footer .links, .contact-form {
+  border: solid 1px rgb(12,12,12);
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 340px;
+  width: 280px;
 }
 
 #contact button.btn {
@@ -264,7 +281,7 @@ h1, .heading, .em {
   scroll-snap-align: start;
   margin-bottom: 3rem;
   border-radius: 1rem;
-  min-width: 500px;
+  flex-wrap: wrap;
 }
 
 
@@ -302,14 +319,10 @@ h1, .heading, .em {
   line-height: 2rem;
 }
 .contact-form button {
-  text-align: right;
-  transition: text-align 0.3s ease;
-}
-.contact-form button:hover {
-  text-align: center;
+  border: solid 1px rgb(12,12,12);
 }
 .contact-form button:active {
-  text-align: left;
+  background: var(--bg-dark)
 }
 
 .card {
@@ -332,14 +345,14 @@ h1, .heading, .em {
   text-align: right;
 }
 
-#shop {
+#services {
   margin-top: 44vh;
   margin-bottom: 6rem; /* todo */
   color: var(--bg-dark)
 }
 
 @media (max-width:1000px) {
-  #shop {
+  #services {
     margin-bottom: 8rem;
   }
   header {
