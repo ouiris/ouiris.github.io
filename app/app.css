@@ -289,6 +289,9 @@ h1, .heading, .em {
 .hero h2 span {
   margin-right: -1.5rem;
 }
+.hero h3 span {
+  margin-left: 1.5rem;
+}
 
 
 

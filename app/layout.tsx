@@ -11,7 +11,7 @@ export default function GlobalLayout({ children }: { children: React.ReactNode }
 function Header() {
     return (
         <header>
-        <a href='/'><h1>Ouirise Initiative</h1></a>
+        <a href='/'><h1>Ouirise.Initiative</h1></a>
         <nav>
         <ul>
             <li><a href="/#services">Services</a></li>
@@ -42,7 +42,7 @@ function Footer() {
             </div>
       </section>
 
-              <a className="em" href="/"><h2 className="em">Ouirise Initiative</h2></a>
+              <a className="em" href="/"><h2 className="em">Ouirise.Initiative</h2></a>
 
       
         <form id="contact" className="contact-form">

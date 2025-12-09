@@ -1,6 +1,7 @@
 import Layout from "~/layout";
 import { featuredCollections } from "~/data"
 import type { JSX } from "react";
+import '~/css/home.css'
 
 interface Collection { name: string, symbol: string[], focus: string, description: string, category: string}
 
@@ -10,14 +11,16 @@ export default function Home() {
         <Layout>
             <article className="hero">
             <section>
-            <h2 className="ital"><span className="em">Cultural</span>Infused Goods</h2>
-            <h3 className="ital">Priceless beyond <span className="em">Gold</span></h3>
-            <a className="btn" href="#shop">SHOP NOW</a>
+            <h2 className="ital"><span className="em">OUIRISE.</span>Collective of creatives, developers, entreprenuers</h2>
+            <h3 className="strong">Crafted with precision <span className="em">& INITIATIVE</span></h3>
+            <a className="btn" href="#services">Our Services</a>
+
             </section>
             </article>
 
-            <div id="shop">.</div>
-            <h2  className="ital center">Cultural Collections</h2>
+            <div id="services">.</div>
+            <h2  className="strong center">what oui do</h2>
+            <p></p>
 
             <article className="collections">
                 {featuredCollections.slice(0, 2).map((collection: Collection): JSX.Element => (
@@ -42,7 +45,7 @@ function CollectionCard({ name, symbol, category, focus, description}: Collectio
                         <p>{focus} {category}</p>
                         <p>{description}</p>
 
-                        {symbol.map(s => <a href="/culturalgold/about" className="right">{s}</a>)}
+                        {symbol.map(s => <a href="/about" className="right">{s}</a>)}
                         <a className="btn">View Collection</a>
                     </div>
     )

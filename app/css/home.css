@@ -1,0 +1,11 @@
+.hero h2, .hero h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.hero .em {
+    height: 2rem;
+    padding-top: 4px;
+}
